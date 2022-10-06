@@ -35,3 +35,9 @@ p, h1, h2, h3, h4, h5, button, a {
     font-size: 1rem;
     width: 15rem;
 }
+#PageImage {
+    width: 48rem;
+    height: 27rem;
+    border-radius: 15px;
+
+}
