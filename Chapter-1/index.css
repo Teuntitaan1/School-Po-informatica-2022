@@ -4,38 +4,34 @@
 body {
     background-color: #151e3f;
 }
-p, h1, h2, h3, h4, h5, button, a {
+p, h1, h2, h3, h4, h5, button, a, div {
     color: #f2f3d9;
     font-family: 'Inter';
+}
+/*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
+#Wie, #Wat, #Waar {
+    font-size: 4rem;
 }
 .container {
     display: flex;
 }
-/*
-alles voor de knop die het nummer vergroot
-*/
-#Clickcounterdiv {
-    background-color: #030027;
-    border-radius: 10px;
-}
-#Clickcounterbutton {
-    background-color: #151e3f;
-    border-radius: 4px; 
-}
-
 #PageTitle {
     font-weight: 200;
     font-size: 6rem;
     text-align: center;
 }
-
+#PageHeader {
+    display: block;
+}
 /*
 Animeert de links bovenaan de pagina
 */
 .PageLink {
     font-size: 1rem;
+    text-decoration-line: none;
+    text-underline-offset: 5px;
     transition-duration: 0.4s;
 }
 .PageLink:hover {
-    text-underline-offset: 5px;
+    text-decoration-line: underline;
 }
