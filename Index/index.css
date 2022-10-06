@@ -1,0 +1,37 @@
+/*Importeerd de "Inter" font van google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+body {
+    background-color: #151e3f;
+}
+p, h1, h2, h3, h4, h5, button, a {
+    color: #f2f3d9;
+    font-family: 'Inter';
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#PageTitle {
+    font-weight: 200;
+    font-size: 7rem;
+    text-align: center;
+}
+#FirstText {
+    font-weight: 500;
+    text-align: center;
+}
+#StartButton {
+    background-color: #030027;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    width: 12rem;
+    height: 4rem;
+    font-size: 0.7rem;
+}
+#StartButton:hover {
+    background-color: #F2F3D9;
+    color:#030027;
+    font-size: 1rem;
+    width: 15rem;
+}
