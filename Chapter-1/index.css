@@ -4,12 +4,16 @@
 body {
     background-color: #151e3f;
 }
-p, h1, h2, h3, h4, h5, button, a, div {
+p, h1, h2, h3, h4, h5, button, a, div, footer {
     color: #f2f3d9;
     font-family: 'Inter';
 }
+footer {
+    font-size: 0.7rem;
+    opacity: .50;
+}
 /*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
-#Wie, #Wat, #Waar {
+#WieHeader, #WatHeader, #WaarHeader {
     font-size: 4rem;
 }
 .container {
@@ -22,6 +26,13 @@ p, h1, h2, h3, h4, h5, button, a, div {
 }
 #PageHeader {
     display: block;
+}
+.Titlelink {
+    text-decoration-line: none;
+}
+.Titlelink:hover {
+    text-decoration-line: underline;
+    font-weight: 300;
 }
 /*
 Animeert de links bovenaan de pagina

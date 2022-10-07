@@ -4,9 +4,13 @@
 body {
     background-color: #151e3f;
 }
-p, h1, h2, h3, h4, h5, button, a {
+p, h1, h2, h3, h4, h5, button, a, footer {
     color: #f2f3d9;
     font-family: 'Inter';
+}
+footer {
+    font-size: 0.7rem;
+    opacity: .50;
 }
 .container {
     display: flex;
