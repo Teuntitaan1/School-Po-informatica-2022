@@ -12,11 +12,11 @@
 }
 
 body {
-    background-color: #151e3f;
+    background-color: #f0edee;
     animation: Fadein 2s ease-in-out 0s 1 forwards ;
 }
 p, h1, h2, h3, h4, h5, button, a, div, footer {
-    color: #f2f3d9;
+    color: #0a090c;
     font-family: 'Inter';
 }
 footer {
@@ -31,7 +31,7 @@ footer {
     display: flex;
 }
 #PageTitle {
-    font-weight: 200;
+    font-weight: 700;
     font-size: 6rem;
     text-align: center;
 }
@@ -43,7 +43,7 @@ footer {
 }
 .Titlelink:hover {
     text-decoration-line: underline;
-    font-weight: 300;
+    font-weight: 800;
 }
 /*
 Animeert de links bovenaan de pagina

@@ -1,51 +1,41 @@
 /*Importeerd de "Inter" font van google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
-/*Simpele animaties met css zodat alles er netjes uit ziet*/ 
-@keyframes Fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 body {
-    background-color: #151e3f;
-    animation: Fadein 2s ease-in-out 0s 1 forwards ;
+    background-color: #f0edee;
 }
 p, h1, h2, h3, h4, h5, button, a, footer {
-    color: #f2f3d9;
+    color: #0a090c;
     font-family: 'Inter';
 }
 footer {
     font-size: 0.7rem;
-    opacity: .50;
+    opacity: 0.5;
 }
 .container {
     display: flex;
     justify-content: center;
 }
 #PageTitle {
-    font-weight: 200;
+    font-weight: 900;
     font-size: 7rem;
     text-align: center;
 }
 #FirstText {
     font-weight: 500;
-    text-align: center;
 }
 #StartButton {
-    background-color: #030027;
+    background-color: #07393c;
     border-radius: 15px;
     transition-duration: 0.4s;
     width: 12rem;
     height: 4rem;
     font-size: 0.7rem;
+    color: #E3DEDF;
 }
 #StartButton:hover {
-    background-color: #F2F3D9;
-    color:#030027;
+    background-color: #2c666e;
+    color:#f0edee;
     font-size: 1rem;
     width: 15rem;
 }
