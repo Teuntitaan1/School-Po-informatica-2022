@@ -1,8 +1,18 @@
 /*Importeerd de "Inter" font van google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+/*Simpele animaties met css zodat alles er netjes uit ziet*/ 
+@keyframes Fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 body {
     background-color: #151e3f;
+    animation: Fadein 2s ease-in-out 0s 1 forwards ;
 }
 p, h1, h2, h3, h4, h5, button, a, footer {
     color: #f2f3d9;
