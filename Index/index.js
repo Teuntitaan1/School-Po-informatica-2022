@@ -1,4 +1,9 @@
-CurrentTheme = "light";
+// haalt de laatst gekozen thema uit de localstorage en update de website naar dat thema, als de key "Theme" niet bestaat zet hij het thema automatisch naar "light"
+CurrentTheme = localStorage.getItem("Theme");
+if (CurrentTheme == null) {
+    CurrentTheme = "light";
+} 
+ChangeTheme();
 
 // elke keer dat de user zijn systeemsettings veranderd vangt de browser hem hier op
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
@@ -26,5 +31,7 @@ function ChangeTheme() {
     else {
         document.body.classList.remove("DarkTheme")
     }
+    // updated de local storage met het huidige thema zodat, in het geval dat de gebruiker de site verlaat deze bewaard blijft
+    localStorage.setItem("Theme", CurrentTheme);
 }
 
