@@ -1,28 +1,46 @@
 /*Importeerd de "Inter" font van google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
-/*Simpele animaties met css zodat alles er netjes uit ziet*/ 
-@keyframes Fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+/*Als de body geen class heeft dan zijn de variablen zoals hieronder*/
+body {
+    
+    --Text-Colour: #0a090c;
+    --Background-Colour : #f0edee;
+    
+}
+/*Ander zijn ze als volgt, dit is zodat de dark theme goed werkt*/
+body.DarkTheme {
+    
+    --Text-Colour: #f0edee;
+    --Background-Colour : #0a090c;
 }
 
 body {
-    background-color: #f0edee;
-    animation: Fadein 2s ease-in-out 0s 1 forwards ;
+    background-color: var(--Background-Colour);
+    margin: 0px;
 }
 p, h1, h2, h3, h4, h5, button, a, div, footer {
-    color: #0a090c;
+    color: var(--Text-Colour);
     font-family: 'Inter';
 }
 footer {
     font-size: 0.7rem;
     opacity: .50;
 }
+#ThemeToggleButton {
+    
+    background-image: url(..Index/Images/KleurThemaToggleLogo.svg);
+    border-radius: 5px;
+    border-width: 0px;
+    
+    position:absolute;
+     top:0;
+     right:0;
+
+    width: 4rem;
+    height: 4rem;
+}
+
 /*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
 #WieHeader, #WatHeader, #WaarHeader {
     font-size: 4rem;
@@ -37,6 +55,9 @@ footer {
 }
 #PageHeader {
     display: block;
+    position: sticky;
+    top: 0px;
+    margin: 0%;
 }
 .Titlelink {
     text-decoration-line: none;
