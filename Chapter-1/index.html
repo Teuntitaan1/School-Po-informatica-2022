@@ -24,14 +24,25 @@
         <a href="" class="PageLink">Hoofdstuk 4</a>
         |
         <a href="" class="PageLink">Hoofdstuk 5</a>
-        <button onclick="ToggleButtonClicked()" id="ThemeToggleButton"></button>
         <!--De header is een lijntje dat de hoofdstukkenpagina en de content van de pagina zelf onderscheid-->
         <hr>
     </div>
 
+    <button onclick="ToggleButtonClicked()" id="ThemeToggleButton"></button>
+    
     <h1 id="PageTitle">
         <a href="#Wie" class="Titlelink">Wie</a>, <a href="#Wat" class="Titlelink">Wat</a>,<a href="#Waar" class="Titlelink">Waar</a>?
     </h1>
+
+    <form id=Guestbook>
+        
+        <label for="Name">Wat is uw naam?</label>
+        <input type="text" name="Name" id="Name" value="">
+
+    
+        <button type="submit">Verstuur</button>
+
+    </form>
 
     <div id="Wie">
         

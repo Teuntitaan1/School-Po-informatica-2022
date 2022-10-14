@@ -1,5 +1,6 @@
 // haalt de laatst gekozen thema uit de localstorage en update de website naar dat thema, als de key "Theme" niet bestaat zet hij het thema automatisch naar "light"
-CurrentTheme = localStorage.getItem("Theme");
+var CurrentTheme = localStorage.getItem("Theme");
+
 if (CurrentTheme == null) {
     CurrentTheme = "light";
 } 
@@ -34,4 +35,7 @@ function ChangeTheme() {
     // updated de local storage met het huidige thema zodat, in het geval dat de gebruiker de site verlaat deze bewaard blijft
     localStorage.setItem("Theme", CurrentTheme);
 }
+
+
+//al het andere
 

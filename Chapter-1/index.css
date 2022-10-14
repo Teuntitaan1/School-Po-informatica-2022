@@ -1,11 +1,14 @@
 /*Importeerd de "Inter" font van google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*Als de body geen class heeft dan zijn de variablen zoals hieronder*/
 body {
     
     --Text-Colour: #0a090c;
     --Background-Colour : #f0edee;
+    
+    --HeaderText-Colour : #f0edee;
+    --HeaderBackground-Colour : #0a090c;
     
 }
 /*Ander zijn ze als volgt, dit is zodat de dark theme goed werkt*/
@@ -13,23 +16,32 @@ body.DarkTheme {
     
     --Text-Colour: #f0edee;
     --Background-Colour : #0a090c;
+
+    --HeaderText-Colour : #0a090c;
+    --HeaderBackground-Colour : #f0edee;
 }
 
 body {
+    
     background-color: var(--Background-Colour);
     margin: 0px;
+
 }
-p, h1, h2, h3, h4, h5, button, a, div, footer {
+p, h1, h2, h3, h4, h5, button, a, div, footer, input, label {
+    
     color: var(--Text-Colour);
-    font-family: 'Inter';
+    font-family: 'Poppins';
+
 }
 footer {
+    
     font-size: 0.7rem;
     opacity: .50;
+
 }
 #ThemeToggleButton {
     
-    background-image: url(..Index/Images/KleurThemaToggleLogo.svg);
+    background-image: url(./Images/KleurThemaToggleLogo.svg);
     border-radius: 5px;
     border-width: 0px;
     
@@ -54,10 +66,11 @@ footer {
     text-align: center;
 }
 #PageHeader {
+    background-color: var(--HeaderBackground-Colour);
     display: block;
     position: sticky;
-    top: 0px;
-    margin: 0%;
+    top: 0%;
+    
 }
 .Titlelink {
     text-decoration-line: none;
@@ -70,9 +83,13 @@ footer {
 Animeert de links bovenaan de pagina
 */
 .PageLink {
+    
+    color: var(--HeaderText-Colour);
     font-size: 1rem;
+    
     text-decoration-line: none;
     text-underline-offset: 5px;
+
     transition-duration: 0.4s;
 }
 .PageLink:hover {
