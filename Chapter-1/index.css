@@ -56,6 +56,7 @@ footer {
 /*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
 #WieHeader, #WatHeader, #WaarHeader {
     font-size: 4rem;
+    
 }
 .container {
     display: flex;
@@ -64,6 +65,7 @@ footer {
     font-weight: 700;
     font-size: 6rem;
     text-align: center;
+
 }
 #PageHeader {
     background-color: var(--HeaderBackground-Colour);
