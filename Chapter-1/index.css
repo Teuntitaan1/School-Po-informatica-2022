@@ -8,7 +8,8 @@ body {
     --Background-Colour : #f0edee;
     
     --HeaderText-Colour : #f0edee;
-    --HeaderBackground-Colour : #0a090c;
+    /*Kleine linear gradient om de site net iets meer flair te geven*/
+    --HeaderBackground-Colour : linear-gradient(180deg, rgba(10,9,12,1) 70%, rgba(240,237,238,1) 100%);;
     
 }
 /*Ander zijn ze als volgt, dit is zodat de dark theme goed werkt*/
@@ -18,7 +19,8 @@ body.DarkTheme {
     --Background-Colour : #0a090c;
 
     --HeaderText-Colour : #0a090c;
-    --HeaderBackground-Colour : #f0edee;
+    /*Kleine linear gradient om de site net iets meer flair te geven*/
+    --HeaderBackground-Colour : linear-gradient(180deg, rgba(240,237,238,1) 70%, rgba(10,9,12,1) 100%);;
 }
 
 body {
@@ -42,15 +44,16 @@ footer {
 #ThemeToggleButton {
     
     background-image: url(./Images/KleurThemaToggleLogo.svg);
-    border-radius: 5px;
-    border-width: 0px;
-    
+    border: #0a090c;
+    border-width: 2px;
     position:absolute;
      top:0;
      right:0;
-
-    width: 4rem;
-    height: 4rem;
+    /*Dit is voor nu een fijne grootte*/
+    width : 2.1rem;
+    height : 2.1rem;
+    
+    
 }
 
 /*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
@@ -68,10 +71,13 @@ footer {
 
 }
 #PageHeader {
-    background-color: var(--HeaderBackground-Colour);
-    display: block;
+
+    display: flex;
+    justify-content: center;
+    background: var(--HeaderBackground-Colour);
     position: sticky;
     top: 0%;
+    padding-bottom: 1rem;
     
 }
 .Titlelink {
@@ -88,7 +94,7 @@ Animeert de links bovenaan de pagina
     
     color: var(--HeaderText-Colour);
     font-size: 1rem;
-    
+    margin-right: 10em;
     text-decoration-line: none;
     text-underline-offset: 5px;
 

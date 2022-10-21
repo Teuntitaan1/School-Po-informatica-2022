@@ -1,2 +1,2 @@
 # School-Po-informatica-2022
-Zieke po informatica, dit wordt gaaf
+My very first "Professional website made with a mix of Html, Css and javascript, i am to implement cool features into this website like a dark theme, a guestbook and maybe even a login page!"
