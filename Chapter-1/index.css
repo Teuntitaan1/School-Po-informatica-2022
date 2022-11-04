@@ -41,21 +41,6 @@ footer {
     opacity: .50;
 
 }
-#ThemeToggleButton {
-    
-    background-image: url(./Images/KleurThemaToggleLogo.svg);
-    border: #0a090c;
-    border-width: 2px;
-    position:absolute;
-     top:0;
-     right:0;
-    /*Dit is voor nu een fijne grootte*/
-    width : 2.1rem;
-    height : 2.1rem;
-    
-    
-}
-
 /*Met de , kun je meerdere classes dezelfde styling geven in een keer!*/
 #WieHeader, #WatHeader, #WaarHeader {
     font-size: 4rem;
