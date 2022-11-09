@@ -1,1 +1,5 @@
 /*Hier kun je alle css plaatsen voor alle pagina's op de site*/
+iframe {
+    border-radius: 10px;
+    width: 100%;
+}
