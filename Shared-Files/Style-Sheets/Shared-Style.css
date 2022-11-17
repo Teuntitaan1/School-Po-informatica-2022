@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*Hier kun je alle css plaatsen voor alle pagina's op de site*/
+
+body {
+    --Black : #0A0908;
+    --Green : #22333b;
+    --Blue : #3D405B;
+    --White : #F5F5F5;
+}
+
+body {
+    background-color: var(--Black);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, button, label, footer {
+    color: var(--White);
+}
+
 iframe {
     border-radius: 10px;
     width: 100%;
+}
+
+/*Elk hoofdstuk heeft zijn eigen titel en subtitel, zo 
+moet de gebruiker een flink tijdje scrollen om bij
+de paginacontent te komen, wat ik persoonlijk cool vindt*/
+#Title {
+    font-size: 10rem;
+    padding-bottom: 100vh;
+}
+#Subtitle {
+    font-size: 5rem;
+    padding-bottom: 100vh;
 }

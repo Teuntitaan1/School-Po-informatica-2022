@@ -1,0 +1,25 @@
+body {
+    --Black : #0A0908;
+    --Green : #22333b;
+    --Blue : #3D405B;
+    --White : #F5F5F5;
+}
+
+#ChapterHeader {
+    background-color: var(--Blue);
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.ChapterLink {
+    color: var(--White);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.ChapterLink:hover {
+    text-decoration: underline;
+}
+.ChapterLink:visited {
+    color: var(--Green);
+}

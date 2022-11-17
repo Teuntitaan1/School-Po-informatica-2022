@@ -1,0 +1,14 @@
+body {
+    --Black : #0A0908;
+    --Green : #22333b;
+    --Blue : #3D405B;
+    --White : #F5F5F5;
+}
+
+body {
+    background-color: var(--Black);
+}
+
+button {
+    background-color: var(--Blue);
+}
