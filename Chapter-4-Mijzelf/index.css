@@ -1,0 +1,7 @@
+.ImgOfSelf {
+    opacity: 0.3;
+    filter: grayscale();
+    width: 100%;
+    height: 100%;
+    
+}

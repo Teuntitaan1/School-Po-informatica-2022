@@ -33,3 +33,24 @@ de paginacontent te komen, wat ik persoonlijk cool vindt*/
     font-size: 5rem;
     padding-bottom: 100vh;
 }
+
+#ChapterHeader {
+    background-color: var(--Blue);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+    z-index: 10000;
+}
+.ChapterLink {
+    color: var(--White);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.ChapterLink:hover {
+    text-decoration: underline;
+}
+.ChapterLink:visited {
+    color: var(--Green);
+}
