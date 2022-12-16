@@ -9,13 +9,12 @@ ul {
     color: var(--White);
 }
 a {
-    color: var(--White);
+    color: var(--Blue);
     text-decoration: none;
-}
-a:visited {
-    color: var(--Green);
+    transition: 0.2s ease-in-out;
 }
 a:hover {
+    color: var(--White);
     text-decoration: underline;
 }
 h3 {

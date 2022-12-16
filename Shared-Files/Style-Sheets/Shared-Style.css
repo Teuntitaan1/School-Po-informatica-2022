@@ -34,6 +34,7 @@ de paginacontent te komen, wat ik persoonlijk cool vindt*/
     padding-bottom: 100vh;
 }
 
+/*Alles voor de menubalk aan de bovenkant van elke pagina*/
 #ChapterHeader {
     background-color: var(--Blue);
     text-align: center;
@@ -53,4 +54,26 @@ de paginacontent te komen, wat ik persoonlijk cool vindt*/
 }
 .ChapterLink:visited {
     color: var(--Green);
+}
+/*Alles voor de Div aan de onderkant van elke pagina*/
+#FooterDiv {
+    background-color: var(--Blue);
+    display: flex;
+    justify-content: center;
+}
+#WaterMark {
+    opacity: .7;
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+.ContactIcon {
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+}
+.ContactIcon:hover{
+    opacity: 0.9;
 }
