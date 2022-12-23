@@ -62,7 +62,7 @@ de paginacontent te komen, wat ik persoonlijk cool vindt*/
     justify-content: center;
 }
 #WaterMark {
-    opacity: .7;
+    opacity: .3;
     font-size: 0.7rem;
     font-weight: bold;
     position: relative;
