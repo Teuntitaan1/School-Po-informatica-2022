@@ -1,7 +1,15 @@
-.ImgOfSelf {
-    opacity: 0.3;
-    filter: grayscale();
-    width: 100%;
-    height: 100%;
-    
+body {
+    --Black : #0A0908;
+    --Green : #22333b;
+    --Blue : #3D405B;
+    --White : #F5F5F5;
+}
+
+li {
+    color: var(--White);
+}
+
+#FavoriteColour {
+    color: #151e3f;
+
 }

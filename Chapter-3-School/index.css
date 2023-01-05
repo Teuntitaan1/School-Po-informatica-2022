@@ -1,3 +1,10 @@
 #WebsiteLink {
     font-size: 2.5rem;
 }
+td {
+    text-align: center;
+}
+#LinkWrapperDiv {
+    display: flex;
+    justify-content: center;
+}
