@@ -1,0 +1,30 @@
+body {
+    --Black : #0A0908;
+    --Green : #22333b;
+    --Blue : #3D405B;
+    --White : #F5F5F5;
+}
+
+.JSCodeDiv {
+    border-color: var(--White);
+    background-color: #22333b;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.black {
+    background-color: var(--Black);
+}
+
+
+.white {
+    background-color: var(--White);
+}
+
+#BlackWhiteChangerP, #BlackWhiteChangerButton {
+    color : var(--Blue);
+}
+
+#BlackWhiteChangerButton {
+    border-radius: 5px;
+}
