@@ -22,7 +22,7 @@ body {
 }
 
 #BlackWhiteChangerP, #BlackWhiteChangerButton {
-    color : var(--Blue);
+    color : #EE4B2B;
 }
 
 #BlackWhiteChangerButton {
