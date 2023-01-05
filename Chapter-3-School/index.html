@@ -28,9 +28,242 @@
     </div>
 
     <h3>Is dat een fijne school?</h3>
-    <p>Jazeker! Op het Groenehart lyceum leer je van alles, docenten zijn er fijn en er is voldoende ruimte om met vrienden leuke dingen te doen!</p>
+    <p>
+        Jazeker! 
+        Op het Groenehart lyceum leer je van alles, docenten zijn er fijn en
+        er is voldoende ruimte om met vrienden leuke dingen te doen!
 
-    <p>Deze pagina moet nog gevuld worden.</p>
+        Ook is er veel ruimte om jezelf te ontwikkelen, er zijn veel naschoolse
+        activiteiten waar ik naartoe ga zoals de Filosofie en debat-club, de zaalvoetbal
+        maar er zijn ook workshops als borduren, er is dus veel te doen in en rond de school!
+    </p>
+    
+    <h3>Haal je goede cijfers?</h3>
+    <p>Het wisselt, hieronder staat mijn cijferlijst, gepakt van magister, oordeel zelf!</p>
+
+
+    <!--Bron = magister.com -->
+    
+    <table class="data-overview table-grid-layout normaal">
+        <colgroup>
+            <col width="15%">
+            <col width="15%">
+            <col width="35%">
+            <col width="20%">
+            <col width="15%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="center">Vak</th>
+                <!-- ngIf: ctrl.heeftVO --><th class="center ng-scope" ng-if="ctrl.heeftVO">Datum invoer</th><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <th>Omschrijving</th>
+                <th class="center">Resultaat</th>
+                <th class="center">Weegfactor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Scheikunde</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">22-12-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">7,0</td>
+                <td class="center ng-binding" data-ng-bind-template="10x">10x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Maatschappijleer</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">21-12-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,6</td>
+                <td class="center ng-binding" data-ng-bind-template="25x">25x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Franse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">11-12-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">PW H2</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">5,4</td>
+                <td class="center ng-binding" data-ng-bind-template="3x">3x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Nederlandse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">09-12-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,2</td>
+                <td class="center ng-binding" data-ng-bind-template="10x">10x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Onderzoek en Ontwerpen</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">29-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">7,8</td>
+                <td class="center ng-binding" data-ng-bind-template="12x">12x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Engelse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">23-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,8</td>
+                <td class="center ng-binding" data-ng-bind-template="10x">10x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope selected no-dots">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Informatica</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">22-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">8,0</td>
+                <td class="center ng-binding" data-ng-bind-template="16x">16x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Scheikunde</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">21-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">8,2</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Onderzoek en Ontwerpen</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">17-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">5,2</td>
+                <td class="center ng-binding" data-ng-bind-template="6x">6x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Franse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">16-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Schrijfvaardigheid</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,1</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Natuurkunde</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">16-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">8,8</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Onderzoek en Ontwerpen</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">15-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,0</td>
+                <td class="center ng-binding" data-ng-bind-template="6x">6x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Wiskunde B</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">15-11-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,1</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Natuurkunde</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">31-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">7,0</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Culturele kunstzinnige vorming</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">18-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cultureel paspoort</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">9,2</td>
+                <td class="center ng-binding" data-ng-bind-template="5x">5x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Lichamelijke opvoeding</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">18-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">G</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Franse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">15-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Grammaire H1 + herh. 3V</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">5,5</td>
+                <td class="center ng-binding" data-ng-bind-template="15x">15x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Informatica</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">10-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">SO informatie digitaal</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">9,4</td>
+                <td class="center ng-binding" data-ng-bind-template="8x">8x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Wiskunde B</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">06-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">H1</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">6,9</td>
+                <td class="center ng-binding" data-ng-bind-template="10x">10x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Levensbeschouwelijke vorming</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">06-10-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Cijfer</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">7,5</td>
+                <td class="center ng-binding" data-ng-bind-template="27.5x">27.5x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Maatschappijleer</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">21-09-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">Wat is maatschappijleer </td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">7,3</td>
+                <td class="center ng-binding" data-ng-bind-template="10x">10x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers --><tr data-ng-repeat="cijfer in ctrl.cijfers" data-ng-click="ctrl.selectCijfer(cijfer)" data-ng-class="{'selected no-dots': cijfer === ctrl.selectedCijfer}" data-sm-notify-complete="leermiddelen" class="ng-scope">
+                <td class="center ng-binding" data-ng-bind="cijfer.vak.omschrijving">Franse taal en literatuur</td>
+                <!-- ngIf: ctrl.heeftVO --><td class="center ng-binding ng-scope" ng-if="ctrl.heeftVO" data-ng-bind="cijfer.ingevoerdOp | date : 'dd-MM-yyyy'">19-09-2022</td><!-- end ngIf: ctrl.heeftVO -->
+                <!-- ngIf: ctrl.heeftBVE && !ctrl.heeftVO -->
+                <td data-ng-bind="cijfer.omschrijving" class="ng-binding">SO H1</td>
+                <td class="center ng-binding" data-ng-bind="cijfer.waarde" ng-class="{'teltnietmee': cijfer.teltMee === false, 'moetinhalen': cijfer.moetInhalen, 'vrijstelling': cijfer.heeftVrijstelling}">9,1</td>
+                <td class="center ng-binding" data-ng-bind-template="1x">1x</td>
+                <td>&nbsp;</td>
+            </tr><!-- end ngRepeat: cijfer in ctrl.cijfers -->
+        </tbody>
+    </table>
+
+    <h3>Wat is je favoriete vak?</h3>
+    <p>
+        Mijn favoriete vak is O&O, onderzoek en ontwerpen. Ik vind dit een leuk vak
+        omdat je eigenlijk alles doet. Het werkt als volgt: Je zoekt een opdracht bij een
+        opdrachtgever(dat is bij mij nu het Archeon), die geeft je een opdracht (Wij moeten
+        een digitale bijenspeurtocht ontwikkelen) en je krijgt dan 8 weken om dit echt uit te werken.
+        De diversiteit van alles is wat het voor mij zo leuk maakt, ook de zelfstandigheid
+        die je er van krijgt is erg nuttig voor later, iets wat je niet leert bij andere vakken.
+    </p>
+    
+    <h3>Zijn er ook vakken die je stom vind?</h3>
+    <p>
+        Frans en scheikunde staan wel in mijn top lijstje van vervelende vakken
+        en dat terwijl ik scheikunde best wel interessant vind, frans niet en daar ben ik ook
+        echt slecht in. Er zijn verder weinig vakken waar ik met tegenzin naartoe ga, ik vind school
+        best wel leuk, zeker met vrienden! 
+    </p>
+    <img src="https://groenehartscholen.nl/lyceum/wp-content/uploads/sites/10/2021/08/Lyceum-reportage-14-van-42-e1630324251370.jpeg" width="100%">
+    <img src="https://groenehartscholen.nl/lyceum/wp-content/uploads/sites/10/2021/08/Lyceum-reportage-29-van-42-e1630325020318-998x1024.jpeg" width="100%">
+
+    <a id="WebsiteLink" href="https://groenehartscholen.nl/lyceum/" target="_blank">Een link naar de site van het Lyceum</a>
 
     <div id="FooterDiv">
         <a href="https://www.instagram.com/teunnemans07/" target="_blank"><img src="../Shared-Files/Images/instagram.png" class="ContactIcon"></a>
