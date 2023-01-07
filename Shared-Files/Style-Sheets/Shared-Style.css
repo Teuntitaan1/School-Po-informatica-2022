@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, p, button, label, footer, table {
+h1, h2, h3, h4, h5, p, button, label, footer, table, form, span, input {
     color: var(--White);
 }
 

@@ -30,23 +30,36 @@
     <h3>En wat mag de verassing wezen?</h3>
     <p>Daar komt ie! Hieronder staan allerlei divs die verbonden zijn met javascript code, elke div doet iets anders uniek. Experimenteer lekker met alles wat er te vinden is!</p>
 
+    <h4>Licht aan, Licht uit</h4>
     <div id="BlackWhiteChanger" class="JSCodeDiv black">
         <button id="BlackWhiteChangerButton" class="black" onclick="ChangeTheme()">Klik mij!</button>
         <p id="BlackWhiteChangerP" class="black">Het huidige kleurenthema is: Wit.</p>
     </div>
     
-    <br>
-    
+    <h4>Klik zo hard als je kan!</h4>
     <div id="IncrementButtonDiv" class="JSCodeDiv">
         <button id="IncrementButton" onclick="Increment()">Klik hier!</button>
         <p id="IncrementP">Je hebt de knop 0 keer ingedrukt.</p>
     </div>
 
-    <br>
-
+    <h4>Hoelang ben ik hier al?</h4>
     <div id="HowLongOnPageDiv" class="JSCodeDiv">
         <p id="HowLongOnPageP">Je bent nog 0 seconden op deze pagina!</p>
         <p id="CurrentTime"></p>
+    </div>
+
+    <h4>!mo tsket njim iaarD</h4> 
+    <div id="SentenceReverserDiv" class="JsCodeDiv">
+        <span>String om om te draaien: </span><input type="text" id="StringToReverse">
+        <button id="ReverseButton" onclick="ReverseString()">Draai om</button>
+        <p id="ReverseOutput"></p>
+    </div>
+
+    <h4>Rekenen?</h4>
+    <div id="CalculatorDiv" class="JSCodeDiv">
+        <span>String om uit te rekenen: </span><input type="text" id="StringToEval">
+        <button id="CalculateButton" onclick="EvalString()">Bereken</button>
+        <p id="CalcOutput"></p>
     </div>
 
     <div id="FooterDiv">

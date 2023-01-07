@@ -28,3 +28,13 @@ body {
 #BlackWhiteChangerButton {
     border-radius: 5px;
 }
+
+#IncrementButton, #ReverseButton, #CalculateButton {
+    background-color: var(--Blue);
+}
+
+input {
+    background-color: var(--Blue);
+    border-radius: 5px;
+    border-width: 0px;
+}

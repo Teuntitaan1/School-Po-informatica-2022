@@ -48,3 +48,34 @@ function ChangeTheme() {
 
     document.getElementById("BlackWhiteChangerP").innerHTML = `Het huidige kleurenthema is: ${Theme}`;
 }
+
+// alles voor de string reverser
+
+function ReverseStringFunction(str) {
+    // Step 1. Use the split() method to return a new array
+    var SplitString = str.split(""); // var splitString = "hello".split("");
+
+    var ReverseArray = SplitString.reverse(); 
+    var JoinArray = ReverseArray.join(""); 
+    return str.split("").reverse().join("");
+}
+
+
+function ReverseString() {
+    if (!document.getElementById("StringToReverse").value == "") {
+        document.getElementById("ReverseOutput").innerHTML += `${ReverseStringFunction(document.getElementById("StringToReverse").value)}<br>`;
+    }
+}
+
+//alles voor de rekenmachine 
+function EvalString() {
+    var Output = "";
+    try {
+        Output = eval(document.getElementById("StringToEval").value);
+    } catch {
+        Output = "Error, er zit een fout in de input.";
+    }
+    if (!document.getElementById("StringToEval").value == "") {
+    document.getElementById("CalcOutput").innerHTML += `${document.getElementById("StringToEval").value} = ${Output}<br>`;
+    }
+}
