@@ -52,9 +52,7 @@ de paginacontent te komen, wat ik persoonlijk cool vindt*/
 .ChapterLink:hover {
     text-decoration: underline;
 }
-.ChapterLink:visited {
-    color: var(--Green);
-}
+
 /*Alles voor de Div aan de onderkant van elke pagina*/
 #FooterDiv {
     background-color: var(--Blue);
